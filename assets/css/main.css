@@ -3513,12 +3513,18 @@ input, select, textarea {
 		}
 
 	#footer > .inner .menu {
-		font-size: 0.8em;
+		/* font-size: 0.8em; */
+		font-size: 1.2em;
 		color: rgba(255, 255, 255, 0.15);
 	}
 
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
+	}
+
+	#footer {
+		text-align: center;
+		text-indent: 0.6em; /* spacing between the text and icons in the footer */
 	}
 
 /* Sidebar */
@@ -3908,3 +3914,10 @@ input, select, textarea {
 			}
 
 		}
+
+/* Embedded YouTube Videos */
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
