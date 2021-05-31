@@ -1,19 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Meet Me Halfway</title>
+		<title>MtG React Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/customCSS.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Nabi Freedom</a>
+				<!-- <a href="index.html" class="title">MtG React Project</a> -->
 				<nav>
 					<ul>
+						<li><a href="goFar.html">Go Far Project</a></li>
+						<li><a href="northstarCafe.html">Northstar Cafe Project</a></li>
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</nav>
@@ -25,23 +28,144 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Nabi Freedom</h1>
-							<span class="image fit"><img src="images/projectImages/large/nabiFreedom.png" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/OeasKvDGLMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h1 class="major">MtG React Project</h1>
+              <p>This frontend project allows users to quickly and easily browse the 20,000+ unique cards from the 28 year history of the popular card game <em>Magic the Gathering</em>. Users can select mutiple sets and filter cards by color / card type and then be presented with every card matching that criteria.</p>
+              <p>This project was built using <strong>React</strong> and <strong>Redux</strong>. All styling and animations are done with CSS. No frontend styling frameworks were used (Bootstrap, Material UI, etc.) with the exceptions of <strong>Semantic UI</strong> (dropdown menu), <strong>React Transition Group</strong> (modal entrance and exit animations), and <strong>React Lazy Load</strong> (lazy loading of images).</p>
+              <!-- Main Image -->
+							<span class="image fit"><img src="images/projectImages/mtgReactProject/1.png" alt="" /></span>
+              <!-- Live Site Link -->
+              <span>See the live site <strong><a href="https://mtgreactproject.netlify.app/" target="_blank">here</a></strong>.</span>
+              <br></br>
+              <span>See this project on <strong><a href="https://github.com/JohnKearney2020/mtgReactReduxProject" target="_blank">GitHub</a></strong>.</span>
+              <br></br>
+              <!-- Video Overview Embed -->
+              <span>See a video overview of the project below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/cMA6qrhM2YQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- Start of Features Section -->
+              <h2>Features</h2>
+              <!-- ========================= -->
+              <!-- Dynamic Background Images -->
+              <!-- ========================= -->
+              <h4>Dynamic Background Images</h4>
+              <ul class="">
+                <li>Background images change automatically based on the set users select.</li>
+                <li>Custom header images are made by me (the artwork is made by the original artist).</li>
+                <li>Currently this feature works when one, and only one set is chosen by the user.</li>
+                <li>Not all sets are supported (there are well over 100, after all), but try the following sets to see the dynamic backgrounds in action:</li>
+                <ul class="noBullets">
+                  <li><em>Commander Legends</em></li>
+                  <li><em>Zendikar Rising</em></li>
+                  <li><em>Double Masters</em></li>
+                  <li><em>Jumpstart</em></li>
+                  <li><em>Ikoria: Lair of Behemoths</em></li>
+                  <li><em>Commander 2020</em></li>
+                  <li><em>Theros Beyond Death</em></li>
+                  <li><em>Throne of Eldraine</em></li>
+                  <li><em>Core Set 2021</em></li>
+                  <li><em>Modern Horizons</em></li>
+                  <li><em>War of the Spark</em></li>
+                  <li><em>Aether Revolt</em></li>
+                  <li><em>Kaladesh</em></li>
+                </ul>
+                <!-- Dynamic Background Images Example Embed -->
+                <span>See an example of dynamic background images below: </span>
+                <br></br>
+                <iframe width="1904" height="800" src="https://www.youtube.com/embed/0BrtRYcVAl4?playlist=0BrtRYcVAl4&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              </ul>
+              <!-- ========================= -->
+              <!-- Animated Dual-faced Cards -->
+              <!-- ========================= -->
+              <h4>Animated Dual-faced Cards</h4>
+              <ul class="">
+                <li>Cards with both a front and back are fully animated allowing the user to quickly switch between them.</li>
+              </ul>
+              <!-- Dynamic Background Images Example Embed -->
+              <span>See an example of animated dual-faced cards below: </span>
+              <br></br>
+              <iframe width="1904" height="743" src="https://www.youtube.com/embed/UMEVQrmGDO8?playlist=UMEVQrmGDO8&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================= -->
+              <!--    Searchable Dropdown    -->
+              <!-- ========================= -->
+              <h4>Searchable Dropdown</h4>
+              <ul class="">
+                <li>Users can search for sets by name and make multiple set selections.</li>
+              </ul>
+              <span class="image fitSmall"><img src="images/projectImages/mtgReactProject/searchableDropdown1.png" alt="" /></span>
+              <span class="image fitSmall"><img src="images/projectImages/mtgReactProject/searchableDropdown2.png" alt="" /></span>
+              <!-- ========================= -->
+              <!--    Card Modal             -->
+              <!-- ========================= -->
+              <h4>Card Modal</h4>
+              <ul class="">
+                <li>Up to date pricing information.</li>
+                <li>Errata'd card text (the text in the card image may no longer be accurate).</li>
+                <li>Links to the same card at other prominent Magic websites and marketplaces.</li>
+              </ul>
+              <span class="image fit"><img src="images/projectImages/mtgReactProject/modal.png" alt="" /></span>
+              <!-- ========================= -->
+              <!--    Mobile Responsive      -->
+              <!-- ========================= -->
+              <h4>Mobile Responsive</h4>
+              <span>See an example of how the site looks on mobile below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/3YVD5z5pCqA?playlist=3YVD5z5pCqA&loop=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================= -->
+              <!--    Lazy Loaded Images     -->
+              <!-- ========================= -->
+              <h4>Lazy Loaded Images</h4>
+              <ul class="">
+                <li>Images are only loaded as needed as the user scrolls down the page.</li>
+              </ul>
+              <!-- ========================= -->
+              <!--   Full List of Libraries  -->
+              <!-- ========================= -->
+              <h4>Full List of Libraries and Frameworks Used:</h4>
+              <ul class="noBullets">
+                <li>React</li>
+                <li>Redux</li>
+                <li>Redux Thunk</li>
+                <li>Semantic UI</li>
+                <li>React Transition Group</li>
+                <li>React Lazy Load</li>
+              </ul>
+              <h4>API Used</h4>
+              MtG React Project uses the <strong><a href="https://scryfall.com/docs/api" target="_blank">Scryfall API</a></strong> form
+              <strong><a href="https://scryfall.com" target="_blank">Scryfall.com</a></strong>.
+              <br></br>
+              <!-- ============================ -->
+              <!--          Open Work           -->
+              <!-- ============================ -->
+              <h4>Open Work</h4>
+              <ul class="">
+                <li>The modal currently accomodates 99.99% of cards. A few of the wordier, dual faced cards (cards with both a front and back) do have trouble fitting on the modal. This needs to be addressed.</li>
+                <li>Some of the custom header background images have text that gets slightly cut off on mobile. These images need to be remade with smaller text.</li>
+              </ul>
+              <!-- ============================ -->
+              <!--  What I Would Do Differently -->
+              <!-- ============================ -->
+              <h4>What I Would do Differently</h4>
+              <p class="smallMarginBottom">This was my first major React project. I started it while first learning React and kept working on it as I learned React and Redux. If I were to start from scratch with the knowledge I have now I would:</p>
+              <ul class="">
+                <li>Make better and more frequent use of the global state in Redux and less use of local state.</li>
+                <li>Refactor the actions associated with Redux to make them more effecient and cleaner.</li>
+                <li>Make many of the components functional components or hooks instead of class based components.</li>
+                <li>Migrate to a frontend styling framework like Bootstrap or similar to make the styling easier and eliminate the need for so many CSS files.</li>
+              </ul>
 						</div>
 					</section>
 
 			</div>
-
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-                        <li class="menu">
-                            John Kearney <a href="https://github.com/JohnKearney2020" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a> <a href="https://www.linkedin.com/in/johnkearneydev" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a>
-                        </li>
+            <li class="menu">
+              John Kearney <a href="https://github.com/JohnKearney2020" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a> <a href="https://www.linkedin.com/in/johnkearneydev" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a>
+            </li>
 					</ul>
 				</div>
 			</footer>

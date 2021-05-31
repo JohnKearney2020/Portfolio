@@ -2014,6 +2014,15 @@ input, select, textarea {
 				border-left: solid 1px rgba(255, 255, 255, 0.15);
 			}
 
+      .features section .icon h3{
+        margin: 0 0 0 5px;
+			}
+
+      .features section .icon img{
+        /* max-height: 50px; */
+        height: 100%;
+			}
+
 			.features section .icon {
 				-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
 				-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
@@ -2031,6 +2040,8 @@ input, select, textarea {
 				left: 3em;
 				top: 3em;
 				opacity: 1;
+        display: flex;
+        align-items: center;
 			}
 
 			.features section:nth-child(1) .icon {
@@ -2191,6 +2202,7 @@ input, select, textarea {
 					border-top-width: 1px !important;
 					border-left-width: 0 !important;
 					width: 100%;
+          min-height: 70px;
 				}
 
 					.features section:first-child {
@@ -2202,20 +2214,24 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.features section {
-				padding: 2.5em 1.5em 0.1em 5.5em ;
+				/* padding: 2.5em 1.5em 0.1em 5.5em ; */
+				padding: 0.5em 0.5em 0.5em 0.5em ;
 			}
 
 				.features section .icon {
 					left: 1.5em;
-					top: 2em;
+					top: 1em;
 				}
 
+      /* .features section .icon img{
+        max-height: 30px;
+      } */
 		}
 
 		@media screen and (max-width: 480px) {
 
 			.features section {
-				padding: 2em 1.5em 0.1em 1.5em ;
+				padding: 0.5em 0.5em 0.5em 0.5em ;
 			}
 
 				.features section .icon {
@@ -2609,6 +2625,17 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.fitSmall {
+			display: flex;
+      justify-content: center;
+			margin: 0 0 2em 0;
+			width: 100%;
+		}
+
+			.image.fitSmall img {
+				max-width: 70%;
+			}
+
 		.image.main {
 			display: block;
 			margin: 0 0 3em 0;
@@ -2618,6 +2645,18 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
+      @media screen and (max-width: 480px) {
+        .image.fitSmall img {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 736px) {
+        .image.fitSmall img {
+          max-width: 90%;
+        }
+      }
 
 /* List */
 

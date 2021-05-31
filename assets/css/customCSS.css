@@ -1,0 +1,47 @@
+.noBullets {
+  list-style-type: none; 
+}
+
+.smallMarginBottom {
+  margin-bottom: 0.5em;
+}
+
+.youTubeEmbed {
+  width: 1200px;
+  height: 800px;
+}
+
+@media screen and (max-width: 1600px) {
+  .youTubeEmbed {
+    width: 900px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .youTubeEmbed {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .youTubeEmbed {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .youTubeEmbed {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .youTubeEmbed {
+    width: 340px;
+    height: 500px;
+  }
+}
