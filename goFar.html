@@ -1,19 +1,22 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Meet Me Halfway</title>
+		<title>Go Far Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/customCSS.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<header id="header">
-				<a href="index.html" class="title">Meet Me Halfway</a>
+				<!-- <a href="index.html" class="title">MtG React Project</a> -->
 				<nav>
 					<ul>
+						<li><a href="mtgReactProject.html">MtG React Project</a></li>
+						<li><a href="northstarCafe.html">Northstar Cafe Project</a></li>
 						<li><a href="index.html">Home</a></li>
 					</ul>
 				</nav>
@@ -25,17 +28,173 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Meet Me Halfway Project</h1>
-							<span class="image fit"><img src="images/projectImages/large/meetMeHalfway.png" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-							<!-- Embedded Youtube Video -->
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/OeasKvDGLMQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<h1 class="major">Go Far Retail Outerwear Website</h1>
+              <p>Go Far is a fully functional retail website built with the <strong>MERN stack</strong> (Mongo DB, Mongoose, Express, React, Node.js) and <strong>Bootstrap</strong>. Authentication is handled with <strong>bcrypt</strong> and authorization is handled with authorization middleware and <strong>JSON Web Tokens (JWT)</strong>. The site is heavily inspired by EddieBauer.com. Users can search for and browse products, add them to their cart or wishlist, and conduct transactions via the PayPal API.</p>
+
+              <!-- Main Image -->
+							<span class="image fit"><img src="images/projectImages/goFar/1.png" alt="" /></span>
+              <!-- Live Site Link -->
+              <span>See the live site <strong><a href="https://gofarapp.herokuapp.com/" target="_blank">here</a></strong>.</span>
+              <br></br>
+              <span>See this project on <strong><a href="https://github.com/JohnKearney2020/goFar" target="_blank">GitHub</a></strong>.</span>
+              <br></br>
+              <!-- Video Overview Embed -->
+              <span>See a video overview of the project below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/32A4VrbCDQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- Start of Features Section -->
+              <h2>Features</h2>
+              <!-- ========================= -->
+              <!-- RESTful API -->
+              <!-- ========================= -->
+              <h4>RESTful API</h4>
+              <ul>
+                <li>Go Far is built on a RESTful API. All CRUD operations use some combination of GET, PUT, POST, and DELETE http requests to the server.</li>
+              </ul>
+              <!-- ========================== -->
+              <!-- Authentication with bcrypt -->
+              <!-- ========================== -->
+              <h4>Authentication with bcrypt</h4>
+              <ul>
+                <li>User authentication is handled with bcrypt when users register and login.</li>
+              </ul>
+
+              <!-- =================================================== -->
+              <!-- Athorization Middleware using JWT (JSON Web Tokens) -->
+              <!-- =================================================== -->
+              <h4>Athorization Middleware using JWT (JSON Web Tokens)</h4>
+              <ul>
+                <li>When users log in a JSON Web Token is created.</li>
+                <li>Athorization middleware looks for that token when users try to access protected routes.</li>
+              </ul>
+              <span class="image fit"><img src="images/projectImages/goFar/authMiddleware.png" alt="" /></span>
+
+              <!-- =================================================== -->
+              <!-- Dynamic Product Image Carousel                      -->
+              <!-- =================================================== -->
+              <h4>Dynamic Product Image Carousel</h4>
+              <ul>
+                <li>Images populate based on the colors selected by the user.</li>
+                <li>Hovering over the featured image gives users a zoomed in view of the product.</li>
+                <li>This was acomplished using <a href="https://express-labs.github.io/pure-react-carousel/">Pure React Carousel</a> by Express Labs.</li>
+                <li>Some products have videos that are included in the carousel. Clicking the video opens a modal that plays an embedded YouTube video.</li>
+              </ul>
+              <!-- Dynamic Product Image Carousel -->
+              <span>See an example of dynamic product carousel images below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/-7muB5Cu3KY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--          Pagination        -->
+              <!-- ========================== -->
+              <h4>Frontend and Backend Pagination</h4>
+              <ul>
+                <li>The Go Far server sends paginated data to the frontend when displaying products, reviews, and orders.</li>
+                <li>For example, the orders section of the User Profile page requests and is sent the data for five orders at a time and no more. As users interact with the pagination buttons more orders are sent as needed.</li>
+                <li>
+                  See the getUserOrders() function in <a href="https://github.com/JohnKearney2020/goFar/blob/main/backend/controllers/orderController.js">orderController.js</a>
+                </li>
+              </ul>
+              <!-- Dynamic Product Image Carousel -->
+              <span>See an example of frontend and backend pagination below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/NE-OW15rkn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--        Product Reviews     -->
+              <!-- ========================== -->
+              <h4>Product Reviews</h4>
+              <ul>
+                <li>Users can add product reviews to products.</li>
+                <li>If they've purchased the product the review will be marked as "Verified Purchase".</li>
+                <li>A user's rating immediately counts toward the products total rating and total reviews.</li>
+                <li>A warning message is displayed if users try to review a product they have already reviewed.</li>
+              </ul>
+              <span>See an example of adding a product review below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/XNqmDJkwvPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--    Search Functionality    -->
+              <!-- ========================== -->
+              <h4>Search Functionality</h4>
+              <ul>
+                <li>Users can search for product names or for broader product categories like "camping" and "leggings".</li>
+              </ul>
+              <span class="image fitSmall"><img src="images/projectImages/goFar/search.png" alt="" /></span>
+              <!-- ========================== -->
+              <!--        User Profiles       -->
+              <!-- ========================== -->
+              <h4>User Profiles</h4>
+              <ul>
+                <li>Users can change their name, email, phone number and passwords.</li>
+                <li>Users can add, edit, and delete their addresses.</li>
+                <li>Users can browse their order history and see a Google Map of their shipping address.</li>
+              </ul>
+              <span>See an example of editing user profile information below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/tp2PVhYxzmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--        User Wishlist       -->
+              <!-- ========================== -->
+              <h4>User Wishlist</h4>
+              <ul>
+                <li>Users can add products to their wishlist. From there they can delete them or move them to the cart.</li>
+                <li>If an item is already in their cart the wishlist will display that to the user.</li>
+              </ul>
+              <span>See an example of the wishlist in action below: </span>
+              <br></br>
+              <iframe width="1904" height="800" src="https://www.youtube.com/embed/adjlZKbNU7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--          User Cart         -->
+              <!-- ========================== -->
+              <h4>Cart</h4>
+              <ul>
+                <li>Users can add and remove items from their cart, change the quantities, save the item for later, or move them to their wishlist (if it's not already in it).</li>
+                <li>The cart checks to see if the items are still in stock and if any quantity changes are needed. Out of stock items are automatically saved for later. Any changes to the cart are relayed to the user.</li>
+              </ul>
+              <span>See an example of the cart in action below: </span>
+              <br></br>
+              <iframe width="1904" height="743" src="https://www.youtube.com/embed/mcn6fLny6zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youTubeEmbed"></iframe>
+              <br></br>
+              <!-- ========================== -->
+              <!--          Checkout         -->
+              <!-- ========================== -->
+              <h4>Checkout</h4>
+              <ul>
+                <li>Users can place orders using the PayPal API and PayPal's sandbox mode. The PayPal API script is not mounted to the Body until needed.</li>
+                <li>Users can add shipping and/or billing addresses if needed during the checkout process.</li>
+              </ul>
+              <span class="image fitSmall"><img src="images/projectImages/goFar/checkout.png" alt="" /></span>
+              <br></br>
+              <!-- ========================== -->
+              <!--         Google Maps        -->
+              <!-- ========================== -->
+              <h4>Google Maps</h4>
+              <ul>
+                <li>Backend - During the final stages of the checkout process the user's shipping address is Geocoded (turned from an address into a pair of latitude and longitude coordinates that will be used by the frontend) and saved with the rest of the order.</li>
+                <li>Frontend - Using the Google Maps Javascript SDK, a map of the user's shipping address is shown for each order. The Google Maps script is not mounted to the Body until needed.</li>
+              </ul>
+              <!-- ========================== -->
+              <!--      Mobile Responsive     -->
+              <!-- ========================== -->
+              <h4>Mobile Responsive</h4>
+              <ul>
+                <li>Go Far is fully mobile responsive.</li>
+              </ul>
+              <span class="image fitSmall"><img src="images/projectImages/goFar/mobile.png" alt="" /></span>
+              <br></br>
+              <span>See the live site <strong><a href="https://gofarapp.herokuapp.com/" target="_blank">here</a></strong>.</span>
+              <br></br>
+              <span>See this project on <strong><a href="https://github.com/JohnKearney2020/goFar" target="_blank">GitHub</a></strong>.</span>
+              <br></br>
 						</div>
 					</section>
 
 			</div>
-
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
